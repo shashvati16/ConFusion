@@ -28,3 +28,8 @@ address{
     margin: 0px;
     color : #0F0F0F;
 }
+
+.hidden-xs-down{
+    margin: 0px auto;
+    padding: 0px auto;
+}

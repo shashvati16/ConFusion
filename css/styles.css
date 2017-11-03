@@ -40,3 +40,12 @@ body{
 .navbar-inverse {
     background-color: #512DA8;
 }
+
+.card-header{
+    background-color: #FFA500;
+}
+
+.btn-block{
+    background-color: #FFA500;
+    color: white;
+}

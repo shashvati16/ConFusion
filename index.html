@@ -15,19 +15,19 @@
 </head>
 
 <body>
-    <!-- add navbar class to enable navigation,collapsible for screen smaller than small,screen navbar stays after page is scrolled-->
+    <!-- add navbar class to enable navigation,collapsible for screen smaller than small, fixed top: screen navbar stays after page is scrolled-->
     <nav class="navbar navbar-inverse navbar-toggleable-sm fixed-top">
         <div class="container">            
-            <button class="nav-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="41"></a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav">
-                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span>Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span>About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span>Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span>Contact</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -35,12 +35,15 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-8">
+                <div class="col-10 col-sm">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col col-sm align-self-center">
+                <div class="col-8 col-sm align-self-center">
                     <img src="img/logo.png" class="img-fluid">
+                </div>
+                <div class="col-8 col-sm align-self-center">
+                    <a class="btn btn-block" href="#reserve">Reserve Table</a>                        
                 </div>
             </div>
         </div>
@@ -56,7 +59,7 @@
                     <img class="d-flex mr-3 img-thumbnail align-self-center"
                         src="img/uthappizza.png" alt="uthapizza">
                     <div class="media-body">                        
-                        <h2 class="mt-0">Uthappizza<span class="badge badge-danger">Hot</span> <span class="badge badge-pill badge-default">$4.99</span> </h2>
+                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger">Hot</span> <span class="badge badge-pill badge-default">$4.99</span> </h2>
                         <p class="hidden-xs-down">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                     </div>    
                 </div>  
@@ -71,7 +74,7 @@
             <div class="col-sm col-md">
                 <div class="media">
                     <div class="media-body">                        
-                        <h2 class="mt-0">Weekend Grand Buffet</h2>
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">New</span></h2>
                         <p class="hidden-xs-down">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
                     </div>
                     <img class="d-flex mr-3 img-thumbnail align-self-center"
@@ -93,6 +96,71 @@
                         <h4>Executive Chef</h4>
                         <p class="hidden-xs-down">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-xl-8 offset-md-2 col-xs" id="reserve">
+                <div class="card">
+                    <h3 class="card-header text-white"> Reserve a Table </h3>
+                    <div class="card-block">
+                        <div class="form-group row">
+                            <label for="Number of Guests" class="col-md-2 col-form-label">Number of Guests </label>                            
+                            <div class="col-sm">
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" name="inlineRadioOptions" type="radio" id="inlineRadio1" value="option1"> 1
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" name="inlineRadioOptions" type="radio" id="inlineRadio2" value="option2"> 2
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" name="inlineRadioOptions" type="radio" id="inlineRadio3" value="option3"> 3
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" name="inlineRadioOptions" type="radio" id="inlineRadio4" value="option4"> 4
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" name="inlineRadioOptions" type="radio" id="inlineRadio5" value="option5"> 5
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" name="inlineRadioOptions" type="radio" id="inlineRadio6" value="option6"> 6
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="Date and Time" class="col-md-2 col-form-label">Date and Time</label>
+                            <div class="col-sm">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><span class="fa fa-calendar"></span></div>
+                                    <input type="text" class="form-control" id="date" name="date"
+                                        placeholder="Date">
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><span class="fa fa-clock-o"></span></div>
+                                    <input type="text" class="form-control" id="time" name="time"
+                                        placeholder="Time">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="offset-md-2 col-md-10">
+                                <button type="submt" class="btn btn-primary">Reserve</button>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
